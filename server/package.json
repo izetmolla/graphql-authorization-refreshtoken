@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "build": "rm -rf build && tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/spazfeed/backend.git"
+  },
+  "author": "Izet Molla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spazfeed/backend/issues"
+  },
+  "homepage": "https://github.com/spazfeed/backend#readme",
+  "dependencies": {
+    "@graphql-tools/schema": "^7.1.5",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.4",
+    "apollo-server-express": "^3.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "graphql-middleware": "^6.0.10",
+    "graphql-shield": "^7.5.0",
+    "graphql-tools": "^7.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8"
+  }
+}
